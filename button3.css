@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 30vh 25vh;
+    background-color: #000;
+}
+.btn{
+    background-color: rgb(231, 11, 11);
+    color:white;
+    padding: 40px 65px;
+    font-size: 27px;
+    cursor: pointer;
+    border: 1px solid rgb(231, 11, 11);
+    box-shadow: 5px 5px 15px 5px rgb(180, 10, 10) inset;
+    transition: all 0.3s;
+}
+.btn:hover {
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px 2px rgb(242, 10, 10) inset, 0 0 15px 8px rgb(150, 7, 7);
+    text-shadow: 3px 3px 3px rgba(141, 140, 140, 0.622);
+    animation: cheshmak 2s infinite ease;
+    animation-direction:alternate-reverse;
+}
+@keyframes cheshmak{
+    0%{
+        color: transparent;
+        text-shadow: none;
+    }
+    20%{
+        color: transparent;
+        text-shadow: none;
+    }
+
+    50%{
+        color:  rgb(255, 255, 255);
+        text-shadow: 3px 3px 2px rgba(141, 140, 140, 0.622);
+    }
+    90%{
+        color: transparent;
+        text-shadow: none;
+    }
+
+
+    100%{color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 2 px rgba(141, 140, 140, 0.622);
+    }
+
+}

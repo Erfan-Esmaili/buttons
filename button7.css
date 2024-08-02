@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    margin: 80px;
+}
+
+.btn{
+    padding: 34px 80px;
+    background-color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #c8b71f;
+    text-transform: uppercase;
+}
+.line-top{
+    position: absolute;
+    background-color: rgb(216, 15, 72);
+    width: 300px;
+    height: 4px;
+    top: 0;
+    left: 0;
+    animation: top 1s linear infinite;
+    animation-delay: 0s;
+}
+.line-right{
+    position: absolute;
+    background-color: rgb(216, 15, 72);
+    width: 4px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    animation: right 1s linear infinite;
+    animation-delay: 0.7s;
+}
+
+.line-bottom{
+    position: absolute;
+    background-color: rgb(216, 15, 72);
+    width: 300px;
+    height: 4px;
+    bottom: 0;
+    right: 0;
+    animation: bottom 1s linear infinite;
+    animation-delay: 1s;
+}
+.line-left{
+    position: absolute;
+    background-color: rgb(216, 15, 72);
+    width: 4px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    animation: left 1s linear infinite;
+    animation-delay: 1.5s;
+
+}
+@keyframes top{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(200px);
+    }
+}
+@keyframes right{
+    0%{
+        transform: translateY(-130px);
+    }
+    100%{
+transform: translateY(90px);
+    }
+}
+@keyframes bottom{
+    0%{
+        transform: translateX(80px); 
+    }
+    100%{
+         transform: translateX(-155px);
+    }
+    
+}
+
+@keyframes left {
+    0%{
+        transform: translateY(130px);
+    }
+
+    100%{
+        transform: translateY(-70px);
+    }
+
+}
